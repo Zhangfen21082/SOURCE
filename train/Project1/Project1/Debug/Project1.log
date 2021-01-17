@@ -1,6 +1,2 @@
 ﻿  test.c
-c:\users\zhangxing\desktop\source\train\project1\project1\test.c(58): warning C4028: 形参 1 与声明不同
-c:\users\zhangxing\desktop\source\train\project1\project1\test.c(58): warning C4029: 声明的形参表不同于定义
-c:\users\zhangxing\desktop\source\train\project1\project1\test.c(58): warning C4273: “remove”: dll 链接不一致
-  d:\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(364): note: 参见“remove”的前一个定义
   Project1.vcxproj -> C:\Users\zhangxing\Desktop\SOURCE\train\Project1\Debug\Project1.exe
