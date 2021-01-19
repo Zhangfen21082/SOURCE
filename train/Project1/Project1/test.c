@@ -198,6 +198,7 @@ int main()//¾Å¾Å³Ë·¨±í
 }
 */
 
+/*
 int computer_make()
 {
 	return rand() % 100 + 1;
@@ -281,5 +282,26 @@ void test()
 int main()
 {
 	test();
+
+}
+*/
+
+void test2()
+{
+	printf("sff");
+}
+void test1()
+{
+	test2();
+}
+
+void test()
+{
+	test1();
+}
+int main()
+{
+	test();
+	return 0;
 
 }
