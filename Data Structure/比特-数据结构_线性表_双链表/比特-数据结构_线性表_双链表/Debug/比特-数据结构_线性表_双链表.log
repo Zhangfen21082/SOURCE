@@ -1,0 +1,5 @@
+﻿  Dlist.c
+c:\users\zhangxing\desktop\source\data structure\比特-数据结构_线性表_双链表\比特-数据结构_线性表_双链表\dlist.c(130): warning C4047: “!=”:“DLdatatype”与“DListNode *”的间接级别不同
+  test.c
+  正在生成代码...
+  比特-数据结构_线性表_双链表.vcxproj -> C:\Users\zhangxing\Desktop\SOURCE\Data Structure\比特-数据结构_线性表_双链表\Debug\比特-数据结构_线性表_双链表.exe
