@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1340
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "比特-数据结构_线性表_链表", "比特-数据结构_线性表_链表\比特-数据结构_线性表_链表.vcxproj", "{4FC93589-D626-457D-A114-DB8E22D083F3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4FC93589-D626-457D-A114-DB8E22D083F3}.Debug|x64.ActiveCfg = Debug|x64
+		{4FC93589-D626-457D-A114-DB8E22D083F3}.Debug|x64.Build.0 = Debug|x64
+		{4FC93589-D626-457D-A114-DB8E22D083F3}.Debug|x86.ActiveCfg = Debug|Win32
+		{4FC93589-D626-457D-A114-DB8E22D083F3}.Debug|x86.Build.0 = Debug|Win32
+		{4FC93589-D626-457D-A114-DB8E22D083F3}.Release|x64.ActiveCfg = Release|x64
+		{4FC93589-D626-457D-A114-DB8E22D083F3}.Release|x64.Build.0 = Release|x64
+		{4FC93589-D626-457D-A114-DB8E22D083F3}.Release|x86.ActiveCfg = Release|Win32
+		{4FC93589-D626-457D-A114-DB8E22D083F3}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {44CED2D8-9AAA-4CF9-A440-BB390DDF2E07}
+	EndGlobalSection
+EndGlobal
