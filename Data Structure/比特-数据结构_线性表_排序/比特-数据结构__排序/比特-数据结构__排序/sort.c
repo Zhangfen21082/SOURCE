@@ -11,6 +11,40 @@ void print(int* a, int n)
 	printf("\n");
 
 }
+void print_fast(int* a, int ll,int rr)
+{
+	int i = 0;
+	for (i = ll; i <rr; i++)
+	{
+		printf("%d ", a[i]);
+	}
+
+}
+
+int GetMidNumber(int* a, int begin, int end)//三数取中法
+{
+	int mid = (begin + end) / 2;
+	if (a[begin] < a[mid])//begin<mid
+	{
+		if (a[mid] < a[end])//left>mid<end
+			return mid;
+		else if (a[begin] > a[end])
+			return begin;//end>begin>mid
+		else
+			return end;//begin>end>mid
+	}
+	else//begin>mid
+	{
+		if (a[mid] > a[end])
+			return mid;
+		else if (a[begin] < a[end])
+			return begin;
+		else
+			return end;
+	}
+
+}
+
 void swap(int* a, int * b)
 {
 	int temp = *a;
@@ -40,7 +74,6 @@ void InsertSort(int* a,int n)
 			}
 		}
 		a[end + 1] = temp;//插入元素
-		print(a, n);
 	}
 }
 
@@ -87,5 +120,79 @@ void SelectSort(int* a, int n)
 		begin++;//后移
 		print(a, n);
 	}
+
+}
+
+void BubbleSort(int* a, int n)
+{
+	int end = n;//end用于指示无序序列的最后一位
+	while (end > 0)
+	{
+		int flag = 0;//flag是标识旗帜，如果一次都没有进行循环，直接跳出
+		for (int i = 1; i < end; ++i)//单趟，
+		{
+			if (a[i - 1] > a[i])
+			{
+				swap(&a[i - 1], &a[i]);
+				flag = 1;
+			}
+		}
+		if (flag == 0)
+			break;
+	}
+
+
+}
+
+int PartSort(int* a, int begin,int end)//快速排序的一部分
+{
+	int mid_number = GetMidNumber(a, begin, end);//取到中间元素
+	swap(&a[begin], &a[mid_number]);//把中间元素交换到左侧元素
+
+	int key = a[begin];//以左侧元素作为基准元素
+	int first = begin;
+	while (begin < end)
+	{
+		while (begin<end && a[end] >= key)//先让end走，抓出小元素
+		{
+			--end;
+		}
+		while (begin<end && a[begin] <= key)//抓出大元素
+		{
+			++begin;
+		}
+		swap(&a[begin], &a[end]);//大元素和小元素想交换
+	}
+	swap(&a[first], &a[end]);//最后一刻，将基准元素归位
+	return begin;
+}
+void QuickSort(int* a, int left, int right)
+{
+	if (left < right)
+	{
+		int div = PartSort(a, left, right);//排序划分区间
+		
+
+	/*	printf("【");//测试输出
+		print_fast(a, left, div);
+		printf("】");
+
+		printf("%d", a[div]);
+
+		printf("【");
+		print_fast(a, div+1, right+1);
+		printf("】");
+
+		printf("\n");
+		printf("\n");*/
+
+		QuickSort(a, left, div - 1);
+		QuickSort(a, div + 1, right);
+	}
+	else
+	{
+		return;
+	}
+
 
 }

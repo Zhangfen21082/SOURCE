@@ -9,12 +9,16 @@ void test()
 	print(&heap, heap._capacity);//原始
 	HeapCreat(&heap, heap._capacity);//建大顶堆
 	print(&heap, heap._capacity);
+	HeapSort(&heap);
+	print(&heap, heap._capacity);
+
+
 	//HeapSort(&heap);//排升序
-	HeapPush(&heap, 97);
-	//HeapPush(&heap, 63);
-	print(&heap, heap._length);
-	HeapPop(&heap);
-	print(&heap, heap._length);
+	//HeapPush(&heap, 97);
+	////HeapPush(&heap, 63);
+	//print(&heap, heap._length);
+	//HeapPop(&heap);
+	//print(&heap, heap._length);
 
 }
 int main()
