@@ -45,7 +45,7 @@ void StackPush(Stack* ps,SLDatatype x)
 	ps->_arr[ps->_top] = x;
 	
 }
-void StackPop(Stack* ps)
+int StackPop(Stack* ps)
 {
 	assert(ps);
 	if (ps->_top == -1)
@@ -53,7 +53,9 @@ void StackPop(Stack* ps)
 		printf("Õ»Îª¿Õ\n");
 		exit(-1);
 	}
+	int receive = ps->_arr[ps->_top];
 	ps->_top--;
+	return receive;
 }
 int StackEmpty(Stack* ps)
 {

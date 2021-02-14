@@ -1,4 +1,4 @@
-#pragma once
+//#pragma once
 #include <stdio.h>
 #include <stdlib.h>
 #include <assert.h>
@@ -25,6 +25,6 @@ void StackAddCapacity(Stack* ps);//打印栈
 void StackPrint(Stack* ps);//打印栈
 
 void StackPush(Stack* ps,SLDatatype x);//进栈
-void StackPop(Stack* ps);//出栈
+int StackPop(Stack* ps);//出栈
 int StackEmpty(Stack* ps);//清空栈（1表示成功）
 SLDatatype StackTop(Stack* ps);//获取栈顶元素
