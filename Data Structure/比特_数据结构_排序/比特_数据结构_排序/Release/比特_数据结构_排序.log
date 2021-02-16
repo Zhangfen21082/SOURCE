@@ -1,0 +1,8 @@
+﻿  sort.c
+  test.c
+  stack.c
+c:\users\zhangxing\desktop\source\data structure\比特-数据结构_线性表_栈和队列\比特-数据结构_线性表_栈\比特-数据结构_栈和队列_栈\stack.c(35): warning C4047: “初始化”:“SLDatatype *”与“SLDatatype”的间接级别不同
+  正在生成代码
+  All 7 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  已完成代码的生成
+  比特_数据结构_排序.vcxproj -> C:\Users\zhangxing\Desktop\比特_数据结构_排序\Release\比特_数据结构_排序.exe
